@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "additional.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/components/meilisearch/hits.jsx",
+    "src/layouts/meilisearch/navbar.jsx",
+    "src/layouts/meilisearch/layout.jsx",
+    "src/data/ssr/supabase-products.ssr.ts",
+    "src/utils/supabase/supabaseClient.js",
+    ".next/types/**/*.ts"
+, "src/components/auth/AuthProvider.tsx"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
